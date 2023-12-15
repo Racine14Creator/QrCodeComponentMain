@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Outfit);
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
 :root {
     --mb: 375px;
@@ -9,13 +9,60 @@
     --DarkBlue: hsl(218, 44%, 22%);
     --fs: 15px;
     --fontFamily: Outfit;
+    --padding: 20px;
+    --borderRaduis: 30px;
 }
 
-.attribution {
-    font-size: 11px;
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: var(--lightGray);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontFamily);
+}
+
+.container {
+    position: relative;
+    background-color: var(--white);
+    margin: 50px auto;
+    padding: var(--padding);
+    border-radius: var(--borderRaduis);
+    width: var(--mb);
+    box-shadow: 1px 3px 29px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 1px 3px 29px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 1px 3px 29px 0px rgba(0, 0, 0, 0.25);
+}
+
+.title,
+p {
+    padding: 20px;
     text-align: center;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+p {
+    padding-top: 0;
+    color: var(--GrayishBlue);
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+@media(max-width: var(--mb)) {
+    .container {
+        width: var(--mb);
+    }
 }
