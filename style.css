@@ -1,0 +1,21 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+:root {
+    --mb: 375px;
+    --desktop: 1440px;
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+    --fs: 15px;
+    --fontFamily: Outfit;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
